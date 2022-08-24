@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 540px;
+    height: 800px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    max-width: 375x;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 14px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+#mobileWoman {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+#illustrationBox {
+    display: none;
+}
+
+#pictureContainer {
+    width: 375px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+#womanPicture {
+    display: none;
+
+}
+
+#patternDesktop {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    z-index: 1;
+
+
+}
+
+#menuContainer {
+    width: 400px;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0px 30px 30px;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accordionMenu,
+.panelText {
+    padding-bottom: 10px;
+}
+
+.accordionMenu {
+    width: 350px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(237, 12%, 33%);
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    border-left: none;
+    font-weight: 200;
+}
+
+.iconDown {
+    transform: rotate(0deg);
+}
+
+.panelText {
+    width: 350px;
+    display: none;
+    overflow: hidden;
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+    font-weight: 400;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+
+}
+
+.activeAccordionMenu {
+    color: hsl(238, 29%, 16%);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    font-weight: 700;
+}
+
+.accordionMenu:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.attribution a {
+    color: hsl(14, 88%, 65%);
+}
